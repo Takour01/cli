@@ -1,0 +1,212 @@
+└───src
+    │   App.scss
+    │   App.tsx
+    │   index.scss
+    │   main.tsx
+    │   vite-env.d.ts
+    │
+    ├───assets
+    │   │   react.svg
+    │   │
+    │   ├───images
+    │   │       index.ts
+    │   │       logoPic.jpg
+    │   │
+    │   └───lib
+    │           constants.ts
+    │           date.ts
+    │           form.ts
+    │           money.ts
+    │           redux.ts
+    │           routes.tsx
+    │           utils.ts
+    │
+    ├───data
+    │   │   api-client.ts
+    │   │   BaseAuthClient.ts
+    │   │
+    │   ├───interfaces
+    │   │       auth.interface.ts
+    │   │       company.interface.ts
+    │   │       employee.interface.ts
+    │   │       genral.interface.ts
+    │   │       reservation.interface.ts
+    │   │       service.interface.ts
+    │   │       visit.interface.ts
+    │   │       workshop.interface.ts
+    │   │
+    │   ├───models
+    │   │       user.model.ts
+    │   │
+    │   ├───repositories
+    │   │       auth.repository.ts
+    │   │       company.repository.ts
+    │   │       employee.repository.ts
+    │   │       service.repository.ts
+    │   │       visit.repository.ts
+    │   │       workshop.repository.ts
+    │   │
+    │   └───store
+    │       │   store.ts
+    │       │
+    │       └───features
+    │               auth.slice.ts
+    │               compay.slice.ts
+    │               employee.slice.ts
+    │               global.slice.ts
+    │               service.slice.ts
+    │               visit.slice.ts
+    │               workshop.slice.ts
+    │
+    └───views
+        ├───components
+        │   ├───local
+        │   │   ├───DataTable
+        │   │   │       DataTable.tsx
+        │   │   │       DataTableColumnHeader.tsx
+        │   │   │       DataTablePagination.tsx
+        │   │   │       DataTableViewOptions.tsx
+        │   │   │
+        │   │   ├───FormInput
+        │   │   │       FormInput.tsx
+        │   │   │
+        │   │   ├───Home
+        │   │   │   ├───ComingReservation
+        │   │   │   │       ComingReservation.tsx
+        │   │   │   │
+        │   │   │   ├───MonthEmployee
+        │   │   │   │       MonthEmployee.tsx
+        │   │   │   │
+        │   │   │   └───StatCard
+        │   │   │           StatCard.tsx
+        │   │   │
+        │   │   ├───ImageInputSlider
+        │   │   │       ImageInputSlider.tsx
+        │   │   │
+        │   │   ├───Navbar
+        │   │   │       Navbar.tsx
+        │   │   │
+        │   │   ├───Pagination
+        │   │   │       Pagination.tsx
+        │   │   │
+        │   │   └───Sidebar
+        │   │           Sidebar.tsx
+        │   │           sidebar.vm.ts
+        │   │
+        │   └───ui
+        │           avatar.tsx
+        │           badge.tsx
+        │           breadcrumb.tsx
+        │           button.tsx
+        │           calendar.tsx
+        │           card.tsx
+        │           carousel.tsx
+        │           checkbox.tsx
+        │           dialog.tsx
+        │           dropdown-menu.tsx
+        │           form.tsx
+        │           input.tsx
+        │           label.tsx
+        │           pagination.tsx
+        │           password-input.tsx
+        │           popover.tsx
+        │           progress.tsx
+        │           radio-group.tsx
+        │           scroll-area.tsx
+        │           select.tsx
+        │           separator.tsx
+        │           sheet.tsx
+        │           sonner.tsx
+        │           table.tsx
+        │           tabs.tsx
+        │           textarea.tsx
+        │           tooltip.tsx
+        │
+        ├───layouts
+        │       company.layout.tsx
+        │       employee.layout.tsx
+        │       main.layout.tsx
+        │       service.layout.tsx
+        │       visit.layout.tsx
+        │       workshop.layout.tsx
+        │
+        ├───pages
+        │   ├───AddAllEmployees
+        │   │       AddAllEmployees.tsx
+        │   │       addAllEmployees.vm.ts
+        │   │
+        │   ├───AddCompany
+        │   │       AddCompany.tsx
+        │   │       addCompany.vm.ts
+        │   │
+        │   ├───AddEmployee
+        │   │       AddEmployee.tsx
+        │   │       addEmployee.vm.ts
+        │   │
+        │   ├───AddService
+        │   │       AddService.tsx
+        │   │       addService.vm.ts
+        │   │
+        │   ├───AddWorkshop
+        │   │       AddWorkshop.tsx
+        │   │       addWorkshop.vm.ts
+        │   │
+        │   ├───Companies
+        │   │       Companies.tsx
+        │   │       companies.vm.tsx
+        │   │
+        │   ├───EditCompany
+        │   │       EditCompany.tsx
+        │   │       editCompany.vm.ts
+        │   │
+        │   ├───EditEmployee
+        │   │       EditEmployee.tsx
+        │   │       editEmployee.vm.ts
+        │   │
+        │   ├───EditService
+        │   │       EditService.tsx
+        │   │       editService.vm.ts
+        │   │
+        │   ├───EditWorkshop
+        │   │       EditWorkshop.tsx
+        │   │       editWorkshop.vm.ts
+        │   │
+        │   ├───Employees
+        │   │       Employees.tsx
+        │   │       employees.vm.tsx
+        │   │
+        │   ├───Home
+        │   │       Home.tsx
+        │   │
+        │   ├───Login
+        │   │       login.page.tsx
+        │   │       login.vm.ts
+        │   │
+        │   ├───Services
+        │   │       Services.tsx
+        │   │       services.vm.tsx
+        │   │
+        │   ├───Visits
+        │   │   │   Visits.tsx
+        │   │   │   visits.vm.tsx
+        │   │   │
+        │   │   └───features
+        │   │       ├───AddVisit
+        │   │       │       AddVisit.tsx
+        │   │       │       addVisit.vm.ts
+        │   │       │
+        │   │       └───EditVisit
+        │   │               EditVisit.tsx
+        │   │               editVisit.vm.ts
+        │   │
+        │   └───Workshops
+        │           Workshops.tsx
+        │           workshops.vm.tsx
+        │
+        └───routes
+                companies.route.tsx
+                employee.route.tsx
+                main.route.tsx
+                services.route.tsx
+                visits.route.tsx
+                workshop.route.tsx
