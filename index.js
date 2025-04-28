@@ -9,6 +9,9 @@ const createSlice = require("./commands/createSlice");
 const createRepository = require("./commands/createRepository");
 const createInterface = require("./commands/createInterface");
 const createStore = require("./commands/createStore");
+const createRoute = require("./commands/createRoute");
+const createModel = require("./commands/createModel");
+const createLayout = require("./commands/createLayout");
 
 // CLI setup for creating components, pages, slices, etc.
 program
@@ -18,7 +21,7 @@ program
   )
   .action(async (type, name) => {
     switch (type) {
-      case "component":
+      case "cm":
         await createComponent(name);
         break;
       case "page":
@@ -27,13 +30,25 @@ program
       case "slice":
         await createSlice(name);
         break;
-      case "repository":
+      case "repo":
         await createRepository(name);
         break;
-      case "interface":
+      case "int":
         await createInterface(name);
         break;
-      case "store":
+      case "route":
+        await createRoute(name);
+        break;
+      case "model":
+        await createModel(name);
+        break;
+      case "lay":
+        await createLayout(name);
+        break;
+      case "lay":
+        await createLayout(name);
+        break;
+      case "sl":
         await createStore(name);
         break;
       default:
